@@ -1,0 +1,148 @@
+Using 1 threads and 800000000 tosses per core.
+Execution time: 16.000.
+Pi is roughly 3.141592.
+Elapsed time: 16.00
+Using 2 threads and 400000000 tosses per core.
+Execution time: 13.000.
+Execution time: 13.000.
+Pi is roughly 3.141593.
+Elapsed time: 13.03
+Using 4 threads and 200000000 tosses per core.
+Execution time: 8.000.
+Execution time: 8.000.
+Execution time: 11.000.
+Execution time: 11.000.
+Pi is roughly 3.141590.
+Elapsed time: 10.29
+Using 8 threads and 100000000 tosses per core.
+Execution time: 6.000.
+Execution time: 6.000.
+Execution time: 6.000.
+Execution time: 6.000.
+Execution time: 6.000.
+Execution time: 6.000.
+Execution time: 6.000.
+Execution time: 7.000.
+Pi is roughly 3.141636.
+Elapsed time: 6.91
+Using 16 threads and 50000000 tosses per core.
+Execution time: 3.000.
+Execution time: 6.000.
+Execution time: 6.000.
+Execution time: 7.000.
+Execution time: 8.000.
+Execution time: 8.000.
+Execution time: 8.000.
+Execution time: 8.000.
+Execution time: 8.000.
+Execution time: 8.000.
+Execution time: 8.000.
+Execution time: 9.000.
+Execution time: 9.000.
+Execution time: 9.000.
+Execution time: 9.000.
+Execution time: 9.000.
+Pi is roughly 3.141612.
+Elapsed time: 9.15
+Using 32 threads and 25000000 tosses per core.
+Execution time: 2.000.
+Execution time: 3.000.
+Execution time: 3.000.
+Execution time: 3.000.
+Execution time: 3.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 5.000.
+Execution time: 5.000.
+Execution time: 5.000.
+Execution time: 5.000.
+Execution time: 5.000.
+Execution time: 5.000.
+Execution time: 6.000.
+Execution time: 6.000.
+Execution time: 6.000.
+Execution time: 6.000.
+Execution time: 6.000.
+Execution time: 6.000.
+Execution time: 6.000.
+Execution time: 6.000.
+Execution time: 6.000.
+Execution time: 6.000.
+Execution time: 6.000.
+Execution time: 6.000.
+Execution time: 6.000.
+Pi is roughly 3.141622.
+Elapsed time: 6.18
+Using 64 threads and 12500000 tosses per core.
+Execution time: 1.000.
+Execution time: 1.000.
+Execution time: 1.000.
+Execution time: 2.000.
+Execution time: 2.000.
+Execution time: 2.000.
+Execution time: 2.000.
+Execution time: 2.000.
+Execution time: 2.000.
+Execution time: 3.000.
+Execution time: 3.000.
+Execution time: 3.000.
+Execution time: 3.000.
+Execution time: 3.000.
+Execution time: 3.000.
+Execution time: 3.000.
+Execution time: 3.000.
+Execution time: 3.000.
+Execution time: 3.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 4.000.
+Execution time: 5.000.
+Execution time: 5.000.
+Execution time: 5.000.
+Execution time: 5.000.
+Pi is roughly 3.141546.
+Elapsed time: 4.54

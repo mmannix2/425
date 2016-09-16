@@ -1,0 +1,24 @@
+Using 1 threads and 80000000 tosses per core.
+Pi is roughly 3.141641.
+
+real	0m2.107s
+user	0m2.101s
+sys	0m0.005s
+Using 2 threads and 40000000 tosses per core.
+Pi is roughly 3.141709.
+
+real	0m1.649s
+user	0m3.283s
+sys	0m0.000s
+Using 4 threads and 20000000 tosses per core.
+Pi is roughly 3.141891.
+
+real	0m1.378s
+user	0m4.821s
+sys	0m0.001s
+Using 8 threads and 10000000 tosses per core.
+Pi is roughly 3.141625.
+
+real	0m0.828s
+user	0m5.509s
+sys	0m0.000s

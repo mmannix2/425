@@ -3,7 +3,9 @@ Matt Mannix
 CPSC 425
 Lab2 Thread Timing
 
-Compile with "make" and run "script.sh"
+Compile with "make" and run "script.sh".
+The script will run my program with 1, 2, 4, 8, 16, 32, and 64 cores and save 
+the output into a file named "Lab2.txt".
 
 */
 

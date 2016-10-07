@@ -1,0 +1,11 @@
+The factors are:
+	2
+	2
+	3
+	5
+	7
+	5503
+
+real	0m0.199s
+user	0m1.323s
+sys	0m0.008s

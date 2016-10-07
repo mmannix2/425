@@ -9,14 +9,15 @@
 void* estimate_pi(void* idp) {
     int number_in_circle = 0, toss;
     int tosses = TOSSES;
+    double rand_max = (double) RAND_MAX;
 
     /* set the seed to our thread id */
     unsigned int* seed = idp;
 
     /* loop through each toss */
     for (toss = 0; toss < tosses; toss++) {
-        double x = ((double) rand_r(seed) / (double) RAND_MAX) * 2.0 - 1.0;
-        double y = ((double) rand_r(seed) / (double) RAND_MAX) * 2.0 - 1.0;
+        double x = ((double) rand_r(seed) / rand_max) * 2.0 - 1.0;
+        double y = ((double) rand_r(seed) / rand_max) * 2.0 - 1.0;
         double dist_squared = x*x + y*y;
 
         if (dist_squared <= 1) {

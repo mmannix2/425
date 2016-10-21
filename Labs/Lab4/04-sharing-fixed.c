@@ -58,4 +58,3 @@ int main ( ) {
     printf("Pi is roughly %lf\n", final); 
     pthread_exit(0);
 }
-

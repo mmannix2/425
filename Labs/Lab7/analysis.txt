@@ -1,0 +1,33 @@
+Matthew Mannix
+Lab 7
+
+#2:
+    ---------------------------------------------------
+    |               |   #1  |   #2  |   #3  | Average |
+    ---------------------------------------------------
+    |Time (Seconds) | 2.717 | 2.743 | 2.699 | 2.719   |
+    ---------------------------------------------------
+
+#3:
+    For each iteration of the for loop , process 0 currently sends to each
+    other process for a total of size-1 sends. We are running the program with
+    8 processes, so there are 7 sends for each iteration.
+
+#4:
+    If broadcasts were used instead of sends, each iteration would do
+    log2(size) sequential communication steps. Because we are using 8
+    processes, we have 3 sequential communication steps.
+
+#5:
+    Because P2P takes 7 steps, and broadcast takes 3 steps, the program should
+    run in 3/7 the time if we use broadcasts.
+    
+    2.719s * (3/7) = 1.165s
+
+    So we can expect the broadcasting version of the program to run in 1.165s.
+#7:
+    ---------------------------------------------------
+    |               |   #1  |   #2  |   #3  | Average |
+    ---------------------------------------------------
+    |Time (Seconds) | 1.975 | 1.970 | 2.006 | 1.983   |
+    ---------------------------------------------------

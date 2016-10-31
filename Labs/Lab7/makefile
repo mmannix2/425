@@ -12,3 +12,7 @@ $(P2P):
 
 $(BCAST):
 	$(CC) $(CFLAGS) $(BCAST).c -o $(BCAST)
+
+.PHONY: clean
+clean:
+	rm $(P2P) $(BCAST)

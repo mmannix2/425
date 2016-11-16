@@ -34,5 +34,5 @@ Lab 7
 
     In the actual test, it took much longer than expected. Every process must
     call MPI_Init(), MPI_Comm_rank(), MPI_Comm_size(), and MPI_Finalize() so
-    there is a portion of the code that cannot be reduced. This is similar to
-    the concept behind Amdahl's Law.
+    there is a portion of the code that cannot be reduced. This seems similar
+    to the principle behind Amdahl's Law.

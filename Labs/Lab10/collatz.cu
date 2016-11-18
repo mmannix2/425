@@ -22,9 +22,9 @@
 __global__ void collatz(unsigned int* step) {
     
     //Set x to the initial value of step
-    unsigned int x = step[blockIdx.x];
+    unsigned int x = step[blockIdx.x * blockDim.x + threadIdx.x];
     //Reset step to 0
-    step[blockIdx.x] = 0;
+    step[blockIdx.x * blockDim.x + threadIdx.x] = 0;
 
     /* do the iterative process */
     while (x != 1) {
@@ -33,39 +33,40 @@ __global__ void collatz(unsigned int* step) {
         } else {
             x = 3 * x + 1;
         }
-        step[blockIdx.x]++;
+        step[blockIdx.x * blockDim.x + threadIdx.x]++;
     }
 }
 
 int main( ) {
     /* store the number of steps for each number up to N */
-    unsigned int cpu_steps[N];
+    unsigned int* cpu_steps = (unsigned int*)malloc(N * sizeof(unsigned int));
     unsigned int* gpu_steps;
     
     /* allocate space on the GPU */
-    cudaMalloc((void**) &gpu_steps, N * sizeof(unsigned int));
+    CHECK( cudaMalloc((void**) &gpu_steps, N * sizeof(unsigned int)) );
     
     for(int i=0; i < N; i++) {
         cpu_steps[i] = i+1;
     }
 
     /* send gpu_steps to the GPU */
-    cudaMemcpy(gpu_steps,
-               cpu_steps,
-               N * sizeof(unsigned int),
-               cudaMemcpyHostToDevice);
+    CHECK( cudaMemcpy(gpu_steps,
+                      cpu_steps,
+                      N * sizeof(unsigned int),
+                      cudaMemcpyHostToDevice) );
     
     /* run the collatz conjecture on all N items */
     collatz<<<BLOCKS, THREADS>>>(gpu_steps);
+    CHECK(cudaPeekAtLastError());
     
     /* send gpu_steps back to the CPU */
-    cudaMemcpy(cpu_steps,
-               gpu_steps,
-               N * sizeof(unsigned int),
-               cudaMemcpyDeviceToHost);
+    CHECK( cudaMemcpy(cpu_steps,
+                      gpu_steps,
+                      N * sizeof(unsigned int),
+                      cudaMemcpyDeviceToHost) );
     
     /* free the memory on the GPU */
-    cudaFree(gpu_steps);
+    CHECK( cudaFree(gpu_steps) );
 
     /* find the largest */
     unsigned int largest = cpu_steps[0], largest_i = 0;
@@ -82,4 +83,3 @@ int main( ) {
 
     return 0;
 }
-
